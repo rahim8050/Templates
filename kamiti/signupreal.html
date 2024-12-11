@@ -1,0 +1,82 @@
+            <!DOCTYPE html>
+            <html>
+                <head>
+                    <meta charset="utf-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <title>Login</title>
+                   <style>
+                    body{
+margin: 0;
+padding: 0;
+box-shadow: paleturquoise;
+
+}
+
+.main{
+
+	padding-top: 15px;
+	padding-bottom: 15px;
+	height: 70px;
+   background: grey;
+}
+
+
+
+.container{
+   margin: Auto;
+   width: 80%;
+   overflow: hidden;
+
+}
+
+
+.reg{
+  padding: 16px;
+  width: 25%;
+  margin: auto;
+  font-size: 15px;
+  background: grey;
+  text-align: center;
+}
+
+
+                   </style>
+                </head>
+                
+                <body style="background: lightcyan;">
+                    <form action="processed.php" method="post" novalidate style="border:1px solid #ccc">
+                  <div class="container">
+                   <div class="reg">
+                    <center><h1>Sign Up</h1></center>
+                    <p>Please fill in this form to create an account.</p>
+                    <hr>
+                    <div>
+                      <label><b>Username</b></label>
+                      <input type="text" placeholder="name" name="name" id="name" required>
+                       </div>
+                       <br><br>
+                     <div >
+                    <label for="email"><b>Email</b></label>
+                    <input type="email" placeholder="Enter Email" name="email" id="email" required>
+                     </div>
+                     <br><br>
+                    
+                     <div>
+                    <label for="password"><b>Password</b></label>
+                    <input type="password" placeholder="Password" name="Password" id="password" required>  <br><br>
+                  </div>
+                  <div>
+                    <label for="password_confirmation"><b>Confirm Password</b></label>  <br>
+                    <input type="password" placeholder="Confirm Password" name="password_confirmation" id="password_confirmation" required>  <br><br>
+                  </div>
+                  
+                     <p><a href="log in.html"> <b> Sign in</b></a></p>
+                    <div class="clearfix">
+                      <button type="button" class="cancelbtn" name="cancel">Cancel</button>
+                      <button type="submit" class="signupbtn" >Sign Up</button>
+                    </div>
+                  </div>
+                </form>
+                
+                </body>
+                </html>

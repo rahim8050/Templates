@@ -1,0 +1,66 @@
+<?php
+
+?>
+<!DOCTYPE html>
+<head>
+    <title>signing up</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <style>
+        /*body{
+            text-align: center;
+            display: block;
+            background-color: rgb(99, 99, 209);
+        }
+     /*   .btn{
+  font-size: 20px;
+  border-radius: 6px;
+  background: green;
+  color: red;
+  padding: 20px;
+  width: 10%;
+
+}*/
+.blue{
+    color: blue;
+}
+.black{
+    color: black;
+}
+    </style>
+</head>
+
+
+
+        <header style="text-align: center; align-items: center;"  >
+            <img class="imip" src="Kamiti.jpg" alt="an image" height="40%" width="50%" > <BR><BR>
+        </header>
+        <b class="blue">KAMITI PRISON MANAGEMENT SIGN UP FORM</b> </br>
+        <p class="black"><b>please fill in the following details</b></p>
+
+        <form action="processing.php" method="post" novalidate>
+        <div>
+            <label for="Username">Username</label>
+            <input type="text" name="Username" id="Username" placeholder="Username" required>
+        </div>
+        
+    <?php if ($is_invalid): ?>
+    <em>invalid email</em>
+<?php endif; ?>
+        <div>
+            <label for="email">email</label>
+            <input type="email" name="email" id="email" placeholder="email" required>
+        </div>
+        <div>
+            <label for="password">password</label>
+            <input type="password" name="password" id="password" placeholder="password" length="8">
+        </div>
+        <div>
+            <label for="password_confirmation">passwordconfirmation</label>
+            <input type="password" name="password_confirmation" id="password_confirmation" placeholder="password_confirmation">
+        </div>
+        <button type="submit" class="btn" >signup</button>
+    </form>
+      
+    </body>
+</html>
